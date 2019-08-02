@@ -1,1 +1,49 @@
 
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git status
+git pull
+git commit -m " Text "
+git push -u orgin master
+git log
+git add
+git log --oneline -10
+git reset --soft ( to bring the file from local repo to staging area  with out the deleting the data )
+git reset --hard ( to bring the file from local repo to staging area with deleting the data )
+git reset HEAD filename ( To bring the staging area  to workspace)
+git checkout ( To revert the changes done on workspace)
+git branch < to list the branches > or git branch --list or git branch -a 
+git branch <branch_name> = to create a branch
+git branch -d <branch_name> = to delete a branch
+git checkout <branch_name> to switch in to another branch 
+git checkout -b <branch_name > it will create a branch and switch in to another branch at a time
+git branch -D <branch_name> To delete the branch forcefully 
+git merge <souce_branch> to merge one branch to another branch == please make sure your are in target branch 
+git commit --amend < to modify the change in the file with adding a message >
+git merge --abort
+git stash save git.same "this stash 3 " == to save the file temporary with saving the file ,
+git stash pop ( { stash id {} )  = cut and paste
+git stash apply ( stash id {} ) = copy and paste
+git stash list = to list the files
+git stash drop {stash ID} = to remove the stash 
+git stash clear - to delete all the stash
+git clone - to clone the repository 
+git config --list
+git config --global alias.<alias name> <git command> example : git config --global alias.st status example2:git config --global alias.log5 "log --oneline -5"
+git config --global --unset alias.<alias_name> example: git config --global --unset alias.st
+git cherry-pick <commit-id> - used for same changes need to be applicable for multiple module
+git fetch 
+git branch == to get the details of local repository
+git branch -r == to get the details for remote branch
+git branch -a == to get both details local and remote 
+git push origin <branch name>
+git pull = git fetch + git merge
+git init <folder name > to make new folder as local repository 
+git init --bare --shared = remote repository 
+git remote add <name> <URL> git remote add origin https://github.com/shanmukha77/terraform^
+git push -u <remote_name> <local_branch_name>
+git config --global user.name <name>
+git config --local user.email <email>
+git push -d <remote_name> <branch_name> == it will delete the remote branch 
+git branch -d <branch_name> = it will delete the local branch 
+git push --set-upstream origin <branch ID>
